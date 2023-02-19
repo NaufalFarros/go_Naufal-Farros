@@ -30,7 +30,7 @@
  * Contoh Nested Loop
 ``` go
 for i:=1; i<=15; i++ {
-   for i:=1; i<=5; i++ {
+   for j:=1; j<=5; j++ {
    fmt.Println("Hallo")
   }
 }
