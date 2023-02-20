@@ -2,8 +2,4 @@
 
 - Pada materi ini mempelajari bagaimana cara management sebuah repositori agar memudahkan dalam melakukan pembuatan sebuah aplikasi secara bersamaan.
 
-<<<<<<< Updated upstream
-- Membuat sebuah Branch baru 
-=======
 * Membuath sebuah branch agar memudahkan dalam management suatu kode pemrograman
->>>>>>> Stashed changes
