@@ -30,4 +30,29 @@ for i := 0; i < len(productPrice); i++ {
 	}
 ```
 
-* Searching adalah sebuah metode 
+* Searching adalah sebuah metode untuk melakukan pencarian 
+
+```
+package main
+
+import "fmt"
+
+func linearSearch(arr []int, x int) int {
+    for i, val := range arr {
+        if val == x {
+            return i
+        }
+    }
+    return -1
+}
+
+func main() {
+    arr := []int{1, 3, 5, 7, 9}
+    x := 7
+    result := linearSearch(arr, x)
+    if result == -1 {
+        fmt.Printf("%d not found\n", x)
+    } else {
+        fmt.Printf("%d found at index,x)
+}
+```
