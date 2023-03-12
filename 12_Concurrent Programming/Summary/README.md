@@ -1,0 +1,9 @@
+## Rangkuman Concurrent Programming
+
+* Goroutine mirip dengan thread, tapi sebenarnya bukan. Sebuah native thread bisa berisikan sangat banyak goroutine. Mungkin lebih pas kalau goroutine disebut sebagai mini thread. Goroutine sangat ringan, hanya dibutuhkan sekitar 2kB memori saja untuk satu buah goroutine. Eksekusi goroutine bersifat asynchronous, menjadikannya tidak saling tunggu dengan goroutine lain.
+* channel digunakan untuk menghubungkan goroutine satu dengan goroutine lain. Mekanisme yang dilakukan adalah serah-terima data lewat channel tersebut. Dalam komunikasinya, sebuah channel difungsikan sebagai pengirim di sebuah goroutine, dan juga sebagai penerima di goroutine lainnya. Pengiriman dan penerimaan data pada channel bersifat blocking atau synchronous
+* Go menyediakan package sync, berisi cukup banyak API untuk handle masalah multiprocessing (goroutine), salah satunya di antaranya adalah yang kita bahas pada chapter ini, yaitu sync.WaitGroup.
+Kegunaan sync.WaitGroup adalah untuk sinkronisasi goroutine. Berbeda dengan channel, sync.WaitGroup memang dirancang khusus untuk maintain goroutine, penggunaannya lebih mudah dan lebih efektif dibanding channel.
+* Race condition adalah kondisi di mana lebih dari satu goroutine, mengakses data yang sama pada waktu yang bersamaan (benar-benar bersamaan). Ketika hal ini terjadi, nilai data tersebut akan menjadi kacau. Dalam concurrency programming situasi seperti ini ini sering terjadi.
+Mutex melakukan pengubahan level akses sebuah data menjadi eksklusif, menjadikan data tersebut hanya dapat dikonsumsi (read / write) oleh satu buah goroutine saja. Ketika terjadi race condition, maka hanya goroutine yang beruntung saja yang bisa mengakses data tersebut. Goroutine lain (yang waktu running nya kebetulan bersamaan) akan dipaksa untuk menunggu, hingga goroutine yang sedang memanfaatkan data tersebut selesai.
+Go menyediakan sync.Mutex yang bisa dimanfaatkan untuk keperluan lock dan unlock data
