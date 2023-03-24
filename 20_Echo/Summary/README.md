@@ -1,0 +1,3 @@
+## Rangkuman Golang Echo
+
+* Golang Echo adalah sebuah framework web yang dibangun dengan menggunakan bahasa pemrograman Go. Framework ini dirancang untuk memudahkan pengembangan aplikasi web dengan cara yang sederhana dan cepat. Golang Echo menawarkan berbagai fitur seperti routing, middleware, request/response binding, dan validasi input. Selain itu, Echo juga memiliki performa yang tinggi dan mudah untuk dikonfigurasi.
