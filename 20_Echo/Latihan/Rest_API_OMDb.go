@@ -71,7 +71,7 @@ func getIMDBbyID(c echo.Context) error {
 	return c.JSON(http.StatusOK, movie)
 }
 
-func getListMovie(c echo.Context) error {
+func getListMoviebyPage(c echo.Context) error {
 
 	search := c.Param("search")
 	fmt.Println(search)
@@ -98,11 +98,35 @@ func getListMovie(c echo.Context) error {
 
 }
 
+func getListMoviebyType(c echo.Context) error {
+
+	typeMovie := c.Param("type")
+	search := c.Param("search")
+	url := "https://www.omdbapi.com/?apikey=a818034f&type=" + typeMovie + "&s=" + search
+
+	res, err := http.Get(url)
+
+	if err != nil {
+		return c.String(http.StatusInternalServerError, "")
+	}
+	defer res.Body.Close()
+
+	var movie ListMovie
+	err = json.NewDecoder(res.Body).Decode(&movie)
+	if err != nil {
+		return c.String(http.StatusInternalServerError, "")
+	}
+
+	return c.JSON(http.StatusOK, movie)
+
+}
+
 func main() {
 
 	e := echo.New()
 
 	e.GET("/movie/:id", getIMDBbyID)
-	e.GET("/movie/:search/:page", getListMovie)
+	e.GET("/movie/:search/:page", getListMoviebyPage)
+	e.GET("/movie/:type/:search", getListMoviebyType)
 	e.Logger.Fatal(e.Start(":8000"))
 }
