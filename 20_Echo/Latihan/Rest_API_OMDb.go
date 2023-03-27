@@ -126,7 +126,7 @@ func main() {
 	e := echo.New()
 
 	e.GET("/movie/:id", getIMDBbyID)
-	e.GET("/movie/:search/:page", getListMoviebyPage)
+	e.GET("/movies/:search/:page", getListMoviebyPage)
 	e.GET("/movie/:type/:search", getListMoviebyType)
 	e.Logger.Fatal(e.Start(":8000"))
 }
