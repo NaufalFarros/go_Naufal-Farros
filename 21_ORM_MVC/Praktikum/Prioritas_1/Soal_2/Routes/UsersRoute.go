@@ -1,7 +1,7 @@
 package routes
 
 import (
-	"21_ORM_MVC/Praktikum/Prioritas_1/Soal_2/Controllers"
+	"go_Naufal-Farros/21_ORM_MVC/Praktikum/Prioritas_1/Soal_2/Controllers"
 
 	"github.com/labstack/echo"
 )

@@ -1,4 +1,4 @@
-module soal2
+module books
 
 go 1.19
 

@@ -1,0 +1,4 @@
+## Rangkuman tentang ORM dan MVC
+* ORM atau Object-Relational Mapping adalah teknik yang digunakan untuk menghubungkan antara database relasional dengan objek di dalam bahasa pemrograman berorientasi objek. Dengan menggunakan ORM, pengembang tidak perlu lagi menuliskan query SQL secara manual, karena ORM akan melakukan mapping antara objek dengan tabel di database. 
+* MVC atau Model-View-Controller adalah pola desain yang digunakan dalam pengembangan perangkat lunak. Dalam MVC, aplikasi dibagi menjadi tiga komponen utama: Model, View, dan Controller. Model bertanggung jawab untuk mengelola data dan logika bisnis, View bertanggung jawab untuk menampilkan data ke pengguna, dan Controller bertanggung jawab untuk menerima input dari pengguna dan memutuskan bagaimana data harus dikelola dan ditampilkan.
+ 
