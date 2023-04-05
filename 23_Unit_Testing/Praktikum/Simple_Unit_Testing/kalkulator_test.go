@@ -1,7 +1,6 @@
 package kalkulator
 
 import (
-	"23_Unit_Testing/Simple_Unit_Testing/kalkulator"
 	"testing"
 )
 
