@@ -1,4 +1,4 @@
-package simple_unit_testing
+package Simple_Unit_Testing
 
 import (
 	"errors"

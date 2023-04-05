@@ -1,6 +1,7 @@
-package simple_unit_testing
+package Simple_Unit_Testing
 
 import (
+	"go_Naufal-Farros/23_Unit_Testing/Praktikum/Simple_Unit_Testing/sample_unit_testing"
 	"testing"
 )
 
