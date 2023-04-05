@@ -2,8 +2,6 @@ package simple_unit_testing
 
 import (
 	"testing"
-
-	"github.com/NaufalFarros/go_Naufal-Farros"
 )
 
 func TestTambah(t *testing.T) {
