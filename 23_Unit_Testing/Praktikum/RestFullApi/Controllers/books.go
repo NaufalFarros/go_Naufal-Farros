@@ -1,9 +1,11 @@
 package Controllers
 
 import (
-	"23_Unit_Testing/Praktikum/RestFullApi/Database"
-	"23_Unit_Testing/Praktikum/RestFullApi/Models"
 	"net/http"
+
+	"23_Unit_Testing/Praktikum/RestFullApi/Database"
+
+	"23_Unit_Testing/Praktikum/RestFullApi/Models"
 
 	"github.com/labstack/echo"
 )

@@ -1,4 +1,4 @@
-package kalkulator
+package simple_unit_testing
 
 import (
 	"errors"

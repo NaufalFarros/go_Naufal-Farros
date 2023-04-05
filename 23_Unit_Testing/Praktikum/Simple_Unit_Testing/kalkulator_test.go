@@ -1,4 +1,4 @@
-package kalkulator
+package simple_unit_testing
 
 import (
 	"testing"
@@ -9,6 +9,7 @@ func TestTambah(t *testing.T) {
 	if hasil != 5 {
 		t.Errorf("Hasil tambah salah, seharusnya 5, tapi hasilnya %d", hasil)
 	}
+
 }
 
 func TestKurang(t *testing.T) {
