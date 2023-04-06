@@ -25,7 +25,7 @@ func TestLoginController(t *testing.T) {
 	c := e.NewContext(req, rec)
 
 	// Assertions
-	if assert.NoError(t, LoginController(c)) {
+	if assert.NoError(t, Controllers.LoginController(c)) {
 		assert.Equal(t, http.StatusOK, rec.Code)
 		assert.Contains(t, rec.Body.String(), "token")
 	}

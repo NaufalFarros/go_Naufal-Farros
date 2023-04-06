@@ -1,9 +1,9 @@
-package Controllers
+package books
 
 import (
-	// "23_Unit_Testing/Praktikum/RestFullApi/Controllers"
-	// "23_Unit_Testing/Praktikum/RestFullApi/Database"
-	// "23_Unit_Testing/Praktikum/RestFullApi/Models"
+	"23_Unit_Testing/Praktikum/RestFullApi/Controllers/books"
+	"23_Unit_Testing/Praktikum/RestFullApi/Database"
+	"23_Unit_Testing/Praktikum/RestFullApi/Models"
 	"bytes"
 	"encoding/json"
 	"github.com/labstack/echo"
