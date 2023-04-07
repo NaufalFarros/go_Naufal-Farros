@@ -1,0 +1,5 @@
+## Rangkuman Clean dan Hexagonal Arsitektur
+
+* Clean Architecture: Clean Architecture adalah sebuah pendekatan dalam pengembangan perangkat lunak yang memisahkan logika bisnis dari teknologi yang digunakan dalam implementasinya. Hal ini memungkinkan pengembang untuk memisahkan tampilan, basis data, dan bagian-bagian lain dari sistem dengan logika inti, sehingga sistem dapat diubah dan dikembangkan secara fleksibel.
+
+* Hexagonal Architecture: Hexagonal Architecture atau Ports and Adapters adalah sebuah pendekatan dalam pengembangan perangkat lunak yang menempatkan logika bisnis di tengah-tengah sistem, dan memisahkan sumber daya eksternal seperti database dan antarmuka pengguna dari kode inti. Hal ini memungkinkan pengembang untuk menguji dan mengembangkan sistem dengan lebih mudah dan lebih fleksibel.
